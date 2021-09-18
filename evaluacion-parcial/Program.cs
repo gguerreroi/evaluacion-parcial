@@ -4,7 +4,7 @@ namespace evaluacion_parcial
 {
     class Program
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
             string key = "";
             string exit = "6";
@@ -19,7 +19,7 @@ namespace evaluacion_parcial
                 Console.WriteLine(" 4- Factorial (inciso 4)");
                 Console.WriteLine(" 5- Leer un archivo de texto (inciso 5)");
                 Console.WriteLine(" 6- SALIR");
-                Console.WriteLine(" Opcion: ");
+                Console.Write(" Opcion: ");
                 key = Console.ReadLine();
 
                 switch (key)
@@ -35,6 +35,7 @@ namespace evaluacion_parcial
                     case "3":
                         inciso_3.Inciso_3 inciso3 = new inciso_3.Inciso_3();
                         inciso3.Mostrar();
+
                         break;
                     case "4":
                         inciso_4.Inciso_4 inciso4 = new inciso_4.Inciso_4();
